@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="file:///E:/Web%20Development/Bootstrap%205/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="file:///E:/Web%20Development/Bootstrap%205/bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
+</head>
+
+<body>
+  <div class="loader">
+
+  </div>
+  <div class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark pt-3 fixed-top">
+      <div class="container main-nav px-5">
+        <a class="navbar-brand" href="#"><img class="logo-img" src="logo.png" alt="#"></a>
+        <i class="fa-solid fa-magnifying-glass cart search-icon d-lg-none ms-auto"></i>
+        <button class="navbar-toggler hamburger-menu-1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon hamburger-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-center ham-navbar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold nav-links active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold nav-links" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold nav-links" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold nav-links" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold nav-links" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold nav-links" href="#">Shop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-shopping-cart cart d-none d-lg-inline"></i>
+          <i class="fa-solid fa-magnifying-glass cart d-none d-lg-inline"></i>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide carousel-main" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="car-img">
+            <div class="container text-container">
+              <div class="row text-row-1">
+                <div class=" col text-col">
+                  <h3 class="small-text">FRESH & ORGANIC</h3>
+                  <h1 class="small-text-2">Delicious Seasonal Fruits</h1>
+                  <div class="row more-row">
+                    <div class="col more-col">
+                      <button type="button" class="btn btn-primary btn-lg hero-btn">Fruit Collection</button>
+                      <button type="button" class="btn btn-primary btn-lg hero-btn-2">Contact Us</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="car-img-1">
+            <div class="container text-container-1">
+              <div class="row text-row text-center ">
+                <div class=" col-12 text-col-middle">
+                  <h3 class="small-text middle">FRESH EVERYDAY</h3>
+                  <h1 class="middle-2">100% Organic Collection</h1>
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-primary btn-lg pg2btn1">Visit Shop</button>
+                    <button type="button" class="btn btn-primary btn-lg pg2btn">Contact Us</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="car-img-2">
+            <div class="container text-container-2">
+              <div class="row text-row">
+                <div class=" col-12 text-col-last">
+                  <h3 class="small-text last">MEGA SALE GOING ON</h3>
+                  <h1 class="last-2">Get December Discount</h1>
+                  <div class="row end-col">
+                    <div class="col text-md-end col-end">
+                      <button type="button" class="btn btn-primary btn-lg hero-btn">Fruit Collection</button>
+                      <button type="button" class="btn btn-primary btn-lg hero-btn-2">Contact Us</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" data-interval="false" type="button"
+        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon prev-icon d-none d-md-block" data-interval="false"
+          aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" data-interval="false" type="button"
+        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon next-icon  d-none d-md-block" data-interval="false"
+          aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="main-header-2">
+    <div class="container">
+      <div class="product-heading text-center my-5">
+        <h2 class="heading py-2 h1"> <span>Our</span> Products</h2>
+        <p class="heading-para py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+      </div>
+      <div class="row my-5 text-center">
+        <div class="col-lg-4 col-md-6 my-2 ">
+          <div class="col-all-items">
+            <div class="header-2-images py-5">
+              <img class = "product-images" src="product-img-1.jpg" alt="">
+            </div>
+            <div class="product-info text-center">
+              <h4 class="fw-bold">Straberry</h4>
+              <p class="my-3">Per Kg</p>
+              <h2 class="price fw-bold">85$</h2>
+            </div>
+            <div class="product-button">
+              <button type="button" class="btn btn-primary btn-lg hero-btn">Add to Cart</button>
+            </div>
+          </div> 
+        </div>
+        <div class="col-lg-4 col-md-6 my-2 ">
+          <div class="col-all-items">
+            <div class="header-2-images py-5">
+              <img class = "product-images" src="product-img-2.jpg" alt="">
+            </div>
+            <div class="product-info text-center">
+              <h4 class="fw-bold">berry</h4>
+              <p class="my-3">Per Kg</p>
+              <h2 class="price fw-bold">45$</h2>
+            </div>
+            <div class="product-button">
+              <button type="button" class="btn btn-primary btn-lg hero-btn">Add to Cart</button>
+            </div>
+          </div>         
+        </div>
+        <div class="col-lg-4 col-md-6 my-2 ">
+          <div class="col-all-items">
+            <div class="header-2-images py-5">
+              <img class = "product-images" src="product-img-3.jpg" alt="">
+            </div>
+            <div class="product-info text-center">
+              <h4 class="fw-bold">Lemon</h4>
+              <p class="my-3">Per Kg</p>
+              <h2 class="price fw-bold">30$</h2>
+            </div>
+            <div class="product-button">
+              <button type="button" class="btn btn-primary btn-lg hero-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-header-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="header-3-image-cont">
+            <div class="offer-circle text-center">
+            <div class="circle-content">
+              <h3 class="fw-bold h4">30%</h3>
+              <p class="fw-normal">off per kg</p>
+            </div>
+            </div>
+            <div class="header3-image">
+              <img class="header-3-img img-fluid"src="a.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="header-3-data-cont">
+            <h1 class="fw-bold"><span>Deal</span> of the month</h1>
+            <h5 class="fw-normal mb-4">HIKAN STRWABERRY</h5>
+            <p>Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant</p>
+          </div>
+          <div class="time-display mt-4">
+            <div class="b1">
+              <h1 class="b1-time">00</h1>
+              <p>Days</p>
+            </div>
+            <div class="b1">
+              <h1 class="b1-time">00</h1>
+              <p>Hours</p>
+            </div>
+            <div class="b1">
+              <h1 class="b1-time">00</h1>
+              <p>Mins</p>
+            </div>
+            <div class="b1">
+              <h1 class="b1-time">00</h1>
+              <p>Secs</p>
+            </div>
+          </div>
+          <div class="product-button">
+            <button type="button" class="btn btn-primary btn-lg hero-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-header-4">
+    <div class="container">
+      <div class="people-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="avatar1.png" class="d-block mx-auto avatar" alt="...">
+              <div class="carousel-textnames text-center my-3">
+                <h5 style="color: #000;">Saira Hakim</h5>
+                <p style="color: rgb(135, 135, 135);">Local Shop Owner</p>
+              </div>
+              <div class="people-review">
+                <p class="text-center" style="color: rgb(135, 135, 135);">
+                  " Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+                </p>
+              </div>
+            </div>           
+            <div class="carousel-item">
+              <img src="avatar2.png" class="d-block mx-auto avatar" alt="...">
+              <div class="carousel-textnames text-center my-3">
+                <h5 style="color: #000;">David Niph</h5>
+                <p style="color: rgb(135, 135, 135);">Local Shop Owner</p>
+              </div>
+              <div class="people-review">
+                <p class="text-center" style="color: rgb(135, 135, 135);">
+                  " Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="avatar3.png" class="d-block mx-auto avatar" alt="...">
+              <div class="carousel-textnames text-center my-3">
+                <h5 style="color: #000;">Jacob Sikim</h5>
+                <p style="color: rgb(135, 135, 135);">Local Shop Owner</p>
+              </div>
+              <div class="people-review text-center">
+                <p class="text-center" style="color: rgb(135, 135, 135);">
+                  " Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+                </p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-header-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="header-3-image-cont">
+            <div class="header4-image">
+              <img class="header-4-img img-fluid" src="abt.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="header-3-data-cont">
+            <p class="fw-normal" style="color: grey;">Since Year 1999<p>
+            <h1 class="fw-bold mb-3">We are <span> FruitKha</span></h1>
+            <p style="max-width: 30rem;">Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem.</p>
+            <p style="max-width: 30rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.</p>
+          </div>
+          <div class="product-button">
+            <button type="button" class="btn btn-primary btn-lg hero-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-header-6">
+    <div class="container">
+      <div class=" row justify-content-center align-item-center">
+      <div class="col-12">
+        <div class="text-element">
+          <h1 class="fw-bold" style="font-size: 3.5rem;">December sale is on!</h1>
+        <h1 class="fw-bold" style="font-size: 3.5rem;">with big <span>Discount...</span></h1>
+        <div class="sale-element mt-4">
+          <h1 class="fw-light" mt-3>Sale Upto <span class="h1 fw-bold">50%</span>Off</h1>
+        </div>
+        <div class="product-button">
+          <button type="button" class="btn btn-primary btn-lg hero-btn">Shop now</button>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-header-7">
+    <div class="container">
+      <div class="product-heading text-center my-5">
+        <h2 class="heading py-2 h1"> <span>Our</span>  News</h2>
+        <p class="heading-para py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+      </div>
+      <div class="row my-5 text-center">
+        <div class="col-lg-4 col-md-6 my-2 ">
+          <div class="col-all-items">
+            <div class="col-images-1"></div>
+            <div class="col-text-list text-start">
+              <h5 class="fw-bold mx-4 my-4">A man's worth has its season, like tomato.</h5>
+              <p class="mx-4" style="color: grey;">20 December, 2019</p>
+              <p class="mx-4" style="color: grey;">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+              <p class="mx-4 fw-bold pb-5">Read More<p></p>
+            </div>
+          </div> 
+        </div>
+        <div class="col-lg-4 col-md-6 my-2 ">
+          <div class="col-all-items">
+            <div class="col-images-2"></div>
+            <div class="col-text-list text-start">
+              <h5 class="fw-bold mx-4 my-4">You will vainly look for fruit on it in autumn.</h5>
+              <p class="mx-4" style="color: grey;">20 December, 2019</p>
+              <p class="mx-4" style="color: grey;">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+              <p class="mx-4 fw-bold pb-5">Read More<p></p>
+            </div>
+          </div>         
+        </div>
+        <div class="col-lg-4 col-md-6 my-2 ">
+          <div class="col-all-items">
+            <div class="col-images-3"></div>
+            <div class="col-text-list text-start">
+              <h5 class="fw-bold mx-4 my-4">Good thoughts bear good fresh juicy fruit.</h5>
+              <p class="mx-4" style="color: grey;">20 December, 2019</p>
+              <p class="mx-4" style="color: grey;">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+              <p class="mx-4 fw-bold pb-5">Read More<p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-button text-center">
+        <button type="button" class="btn btn-primary btn-lg hero-btn">More News</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container footer-cont">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="aboutus">
+            <h4 style="color: #fff;" class="mb-4">About Us</h4>
+            <p class="fw-light"style="color: grey;">Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="aboutus2">
+            <h4 style="color: #fff;"class="mb-4">Get In Touch</h4>
+            <p class="fw-light"style="color: grey;">34/8, East Hukupara, Gifirtok, Sadan.</p>
+            <p class="fw-light"style="color: grey;">support@fruitkha.com</p>
+            <p class="fw-light"style="color: grey;">+00 111 222 3333</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="pages">
+            <h4 class="mb-4"style="color: #fff;">Pages</h4>
+            <p class="fw-light"style="color: grey;">Home</p>
+            <p class="fw-light"style="color: grey;">About</p>
+            <p class="fw-light"style="color: grey;">Shop</p>
+            <p class="fw-light"style="color: grey;">News</p>
+            <p class="fw-light"style="color: grey;">Contact</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="Subscribe">
+            <h4 class="mb-4"style="color: #fff;">Subscribe</h4>
+            <p class="fw-light"style="color: grey;">Subscribe to our mailing list to get the latest updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script>
+    const navEl = document.querySelector('.navbar');
+    const newload = document.querySelector('.loader');
+
+    window.addEventListener('load', () => {
+      newload.style.display = "none";
+    });
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 56) {
+        navEl.classList.add('navbar-scrolled');
+        navEl.classList.remove('pt-3');
+      }
+      else if (window.scrollY < 56) {
+        navEl.classList.remove('navbar-scrolled');
+        navEl.classList.add('pt-3');
+      }
+    });
+  </script>
+</body>
+
+</html>
